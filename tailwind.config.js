@@ -6,6 +6,15 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [],
+  corePlugins: {
+    aspectRatio: false,
+  },
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/aspect-ratio'),
+    require('@tailwindcss/aspect-ratio'),
+    require('@tailwindcss/container-queries'),
+  ],
 }
 
